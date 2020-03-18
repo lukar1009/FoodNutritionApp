@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Food Nutrition Guide</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://earthmonth.asu.edu/sites/default/files/styles/panopoly_image_full/public/food-circle-button.png?itok=MjjoShkh">
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div id="title-container">
+                <h1 id="title">Welcome to our FOOD NUTRITION GUIDE!</h1>
+            </div>
+            <div id="text-container">
+                <div id="textMain">
+                    <p id="text">
+                    Automatically count calories by taking food photos!
+                    We believe calorie counting should be as simple, fun, and easy as taking a picture of your food.
+                    Food Nutrition Guide can tell you the calories in your food just by analyzing your food photos.<br>
+                    <br>How it works:
+                    <br>1) Upload a photo of your desired food,
+                    <br>2) Food Nutrition Guide recognizes your food,
+                    <br>3) It returns nutrition value for it.<br>
+                    </p>
+                </div>
+                <div id="textItalic">
+                    <br><i>LET'S GIVE IT A TRY!!!</i><br><br>
+                </div>
+            </div>
+            <form action="#">
+                <input type="file" id="filename" placeholder="Filename" size="100"/>
+                <button id="nutri-button" onclick="get_nutrition($('#filename').val(), 'file')"><span>GET NUTRITIONAL VALUES! </span></button>
+            </form>
+            <!-- <div id="form-container">
+                <input type="file" id="filename" placeholder="Filename" size="100"/>
+                <button id="nutri-button" onclick="get_nutrition($('#filename').val(), 'file')"><span>GET NUTRITIONAL VALUES! </span></button>
+            </div> -->
+        </div>
+        <div class="secondary-container">
+            <div class="image1-container">
+                <h3 id="startTextImage1">Place your food on the plate!</h3>
+                <img src="img/FAVPNG_fork-plate-knife-spoon_PEVh8a2w.png">
+            </div>
+            <div class="image2-container">
+                <h3 id="startTextImage2">See your food's nutrition value!</h3>
+                <img id="startImage2" src="https://www.healthhub.sg/sites/assets/Assets/Programs/my-healthy-plate/section2_1.png">
+            </div>
+        </div>        
+    </div>
+    <h5>Food Nutrition Guide created by: Ivana Ivanovic</p>
+
+    <script src="js/wolframPrediction.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

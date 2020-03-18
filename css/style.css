@@ -1,0 +1,237 @@
+body{
+    background-image: linear-gradient(to right, lightgreen, rgb(3, 150, 3));
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: url('../img/dan-gold-4_jhDO54BYg-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 20px 40px 4px 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    max-width: 90%;
+}
+
+.main-container{
+    background-color: #F6F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 400px;
+    max-width: 80%;
+    border-radius: 15px;
+}
+
+.secondary-container{
+    background-color: #F6F2F2;
+    border-radius: 15px;
+    display: flex;
+    width: 50%;
+    max-width: 58.5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: green;
+    margin-left: 80px;
+}
+
+#nutri-button {
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, lightgreen, rgb(3, 150, 3));
+    font-family: 'Cormorant Garamond', serif;
+    box-shadow: 3px 3px green;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+#nutri-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#nutri-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#nutri-button:hover span {
+    padding-right: 25px;
+}
+  
+#nutri-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.image1-container, .image2-container{
+    animation: fadeIn ease 5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image1-container img{
+    height: auto;
+    width: 330px;
+    max-width: 80%;
+    border-radius: 15px;
+    transition: transform 1s ease;
+    animation: fadeIn ease 5s;
+}
+
+.image1-container:hover img{
+    transform: scale(1.1);
+}
+
+.image2-container img{
+    height: auto;
+    width: 330px;
+    max-width: 80%;
+    transition: transform 1s ease;
+    animation: fadeIn ease 5s;
+}
+
+.image2-container:hover img{
+    transform: scale(1.1);
+}
+
+#food-slices{
+    height: auto;
+    width: 200px;
+    max-width: 80%;
+    margin-bottom: 20px;
+    border-radius: 0%;
+}
+
+#startImage2{
+    margin-top: 30px;
+}
+
+#nutritionValue{
+    height: auto;
+    width: 280px;
+    max-width: 80%;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+
+#text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#title, #text{
+    color: green;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+#text{
+    font-weight: 100;
+    text-align: justify;
+    margin: 20px
+}
+
+#textItalic{
+    color: green;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    max-width: 80%;
+    height: auto;
+}
+
+#startTextImage1{
+    margin-bottom: 30px;
+}
+
+#startTextImage2{
+    margin-bottom: -10px;
+}
+
+h3{
+    color: green;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 575;
+}
+
+h4{
+    color: green;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+h5{
+    color: white;
+    text-align: center;
+    margin:0;
+    margin-bottom: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+.loading{
+    height: 100px !important; 
+    width: 100px !important;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
